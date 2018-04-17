@@ -48,3 +48,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
  height: 100px;
  line-height: 100px;
 }
+
+.jumbotron {
+    padding: 6rem 2rem;
+    background: #F0F2F0;
+    background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
+    background: linear-gradient(to top, #CBDDEB, #8EBCDE);
+}
