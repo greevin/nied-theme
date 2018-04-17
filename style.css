@@ -1,0 +1,40 @@
+/*
+Theme Name: Tema NIED
+Theme URI: https://github.com/greevin
+Author: Cicero Alexandrino
+Author URI: https://github.com/greevin
+Description: Tema desenvolvido para o novo site do NIED Unicamp.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nied-theme
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* .jumbotron {
+   background: url("assets/images/foto-nied-nova.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+} */
+
+.custom-logo {
+  width: 110px;
+  height: 100px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  border-bottom: 1px solid rgba(0,0,0,.9);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: 1px solid rgba(0,0,0,.7);
+}
+
+.nav-link {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
