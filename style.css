@@ -27,11 +27,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  border-bottom: 1px solid rgba(0,0,0,.9);
+  border-bottom: 1px solid rgba(0, 0, 0, .9);
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  border-bottom: 1px solid rgba(0,0,0,.7);
+  border-bottom: 1px solid rgba(0, 0, 0, .7);
 }
 
 .nav-link {
@@ -40,18 +40,43 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .navbar {
- min-height: 100px;
+  min-height: 100px;
 }
 
 .navbar-brand {
- padding: 0 15px;
- height: 100px;
- line-height: 100px;
+  padding: 0 15px;
+  height: 100px;
+  line-height: 100px;
 }
 
 .jumbotron {
-    padding: 6rem 2rem;
-    background: #F0F2F0;
-    background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
-    background: linear-gradient(to top, #CBDDEB, #8EBCDE);
+  padding: 6rem 2rem;
+  background: #F0F2F0;
+  background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
+  background: linear-gradient(to top, #CBDDEB, #8EBCDE);
+}
+
+.pagina-inicial {
+  padding: 30px 0;
+}
+
+.cards-5columns {
+  float: left;
+  width: 20%;
+  height: 300px;
+}
+
+.footer {
+  padding: 20px 0;
+  background: #124D79;
+  color: white;
+  font-size: 14px
+}
+
+.footer .info p {
+  margin-bottom: 0;
+}
+
+.footer .row {
+  margin-bottom: 1em;
 }
