@@ -28,7 +28,7 @@ function themename_custom_logo_setup() {
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
 // CSS and Scripts
-function wp_responsivo_scripts()
+function wp_load_scripts()
 {
     // 	Carregando CSS header
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
@@ -36,5 +36,8 @@ function wp_responsivo_scripts()
 
     // 	Carregando Scripts header
     wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'));
+
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
+
 }
-add_action('wp_enqueue_scripts', 'wp_responsivo_scripts');
+add_action('wp_enqueue_scripts', 'wp_load_scripts');
