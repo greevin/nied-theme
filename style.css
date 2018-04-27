@@ -50,10 +50,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .jumbotron {
-  padding: 6rem 2rem;
-  background: #F0F2F0;
-  background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);
-  background: linear-gradient(to top, #CBDDEB, #8EBCDE);
+  background-image: url("assets/images/fundo-jumbotron.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
 }
 
 .pagina-inicial {
