@@ -13,6 +13,11 @@ register_nav_menus(array(
     'primary' => __('Menu Inicial', 'menu-inicial'),
 ));
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 // Custom Logo
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
