@@ -80,3 +80,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .footer .row {
   margin-bottom: 1em;
 }
+.divider {
+  border-bottom: 3px solid;
+  color: #007AB8;
+  width: 80px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.divider-footer {
+  border-bottom: 3px solid;
+  width: 80px;
+  margin-bottom: 20px;
+}
