@@ -6,6 +6,6 @@
   <div class="jumbotron jumbotron-fluid text-center">
     <?php } ?>
     <div class="container">
-      <h2 class="display-4"><?php the_title(); ?></h2>
+      <h2 class="display-4 jumbotron-title"><?php the_title(); ?></h2>
     </div>
   </div>

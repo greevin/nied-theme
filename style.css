@@ -13,13 +13,93 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* .jumbotron {
-   background: url("assets/images/foto-nied-nova.jpg") no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   background-size: cover;
-   -o-background-size: cover;
-} */
+
+/* h1, h2, h3, h4, h5, h6, a, a:hover {
+  /* font-family: 'Merriweather', serif; */
+  /* font-family: 'Playfair Display', serif; */
+  /* color: black; */
+/* } */
+
+/* p { */
+    /* font-family: 'Roboto', Helvetica, Arial, serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+/* } */
+
+.section-title, .jumbotron-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.display-4 {
+  font-size: 3rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+/* header */
+
+/* index */
+.jumbotron {
+  background-image: url("assets/images/fundo-jumbotron.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+/* footer */
+.footer {
+  padding: 20px 0;
+  background: #004C77;
+  color: white;
+  font-size: .85rem;
+}
+
+.footer .info p {
+  margin-bottom: 0;
+}
+
+.footer .row {
+  margin-bottom: 1em;
+}
+
+.divider-footer {
+  border-bottom: 3px solid;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+/* eventos */
+.eventos {
+  background: #f5f6f8;
+}
+
+.eventos .card-deck .card {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.eventos .mais-eventos {
+  padding: 25px 0 0;
+}
+
+
+.parceiros .card.mb-4.box-shadow {
+    height: 200px;
+    width: 180px;
+    justify-content: center;
+    margin: auto;
+}
+
+.card-body p {
+  color: #808080;
+}
+
+.footer .licenca a, .footer .endereco a {
+  color: white;
+  text-decoration: underline;
+}
 
 .custom-logo {
   width: 110px;
@@ -28,6 +108,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   border-bottom: 1px solid rgba(0, 0, 0, .9);
+  font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
@@ -49,39 +130,64 @@ Use it to make something cool, have fun, and share what you've learned with othe
   line-height: 100px;
 }
 
-.jumbotron {
-  background-image: url("assets/images/fundo-jumbotron.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 0px;
-}
-
 .pagina-inicial {
   padding: 30px 0;
 }
 
-.cards-5columns {
-  float: left;
-  width: 20%;
-  height: 300px;
+
+.noticias .card, .parceiros .card, .eventos .card, .pesquisa .card, .equipe .card {
+  border: 0;
 }
 
-.footer {
-  padding: 20px 0;
-  background: #124D79;
+.noticias .card-text .btn-link, .eventos .card-text .btn-link {
+  padding: 0;
+}
+
+.noticias .card-title a, .eventos .card-title a, .pesquisa .card-title a, .equipe .card-title a {
+  color: black;
+}
+
+.blog-element {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200px;
+    overflow: hidden;
+}
+
+.fundo-logo {
+  background-image: url("assets/images/nied-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+}
+
+.fundo-branco {
+  background: #FFFFFF;
+}
+
+.fundo-azul {
+  background: #004C77;
+  font-size: 5em;
+}
+
+.fundo-azul a {
   color: white;
-  font-size: 14px
 }
 
-.footer .info p {
-  margin-bottom: 0;
+.fundo-azul a:hover {
+    color: white;
+    text-decoration: none;
 }
 
-.footer .row {
-  margin-bottom: 1em;
+.fundo-azul span {
+  display: table-cell;
+    vertical-align: middle;
+    height: 140px;
+    width: 150px;
+    padding: 0 15px;
 }
+
 .divider {
   border-bottom: 3px solid;
   color: #007AB8;
@@ -91,8 +197,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: 20px;
 }
 
-.divider-footer {
-  border-bottom: 3px solid;
-  width: 80px;
-  margin-bottom: 20px;
+.circle-image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card-cargo p.card-text {
+    margin-bottom: 1px;
 }
