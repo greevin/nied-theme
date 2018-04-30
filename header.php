@@ -15,9 +15,8 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: white;    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: white;box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)">
       <div class="container">
-        <a class="navbar-brand" href="#">
           <!-- caso não tenha o logo, mostra o nome -->
           <?php
             if (has_custom_logo()) {
@@ -26,7 +25,6 @@
               echo get_bloginfo('name');
             }
           ?>
-        </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
