@@ -8,7 +8,7 @@
   <title>
     <?php bloginfo( 'name' ); wp_title('|', true, 'left'); ?>
   </title>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Playfair+Display:700" media="screen">
   <?php wp_head(); ?>
 </head>
 
