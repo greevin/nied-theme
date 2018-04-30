@@ -3,7 +3,8 @@
 <div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-3">
+      <!-- licença -->
+      <div class="col-lg-3 col-md-3 licenca">
         <div class="content">
           <h6>LICENÇA</h6>
           <div class="divider-footer"></div>
@@ -11,7 +12,8 @@
           <p class="my-3">A não ser para conteúdos de terceiros ou quando claramente indicado, os conteúdos disponíveis neste site estão sob uma <a href="http://creativecommons.org/licenses/by/3.0/deed.pt" rel="license">Licença CC-BY</a>.</p>
         </div>
       </div>
-      <div class="col-lg-5 col-md-5" style="border-left: 1px solid;border-right: 1px solid;">
+      <!-- endereco -->
+      <div class="col-lg-5 col-md-5 endereco" style="border-left: 1px solid;border-right: 1px solid;">
         <div class="content">
           <h6>ENDEREÇO</h6>
           <div class="divider-footer"></div>
@@ -53,7 +55,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4">
+      <!-- mapa -->
+      <div class="col-lg-4 col-md-4 mapa">
         <h6>MAPA</h6>
         <div class="divider-footer"></div>
         <div class="embed-responsive embed-responsive-4by3">
