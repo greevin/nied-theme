@@ -1,3 +1,6 @@
+<?php
+// Template para o footer da página
+?>
 <?php wp_footer(); ?>
 
 <div class="footer">
