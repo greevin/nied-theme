@@ -1,3 +1,6 @@
+<?php
+// Jumbotron para as páginas internas
+?>
 <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
 <!-- verifica se existe imagem destacada -->
 <?php if (has_post_thumbnail()) { ?>

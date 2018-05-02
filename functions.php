@@ -22,7 +22,7 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 add_theme_support( 'custom-logo' );
 function themename_custom_logo_setup() {
     $defaults = array(
-        'height'      => 100,
+        'height'      => 400,
         'width'       => 400,
         'flex-height' => true,
         'flex-width'  => true,
@@ -38,11 +38,9 @@ function wp_load_scripts()
     // 	Carregando CSS header
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css');
 
     // 	Carregando Scripts header
     wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'));
-
-    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
-
 }
 add_action('wp_enqueue_scripts', 'wp_load_scripts');
