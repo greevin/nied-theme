@@ -5,7 +5,7 @@
 
 <?php include(TEMPLATEPATH . '/assets/includes/jumbotron.php'); ?>
 
-<div class="container">
+<div class="container" style="margin-top: 30px; margin-bottom: 30px;">
   <div class="row">
       <?php the_content(); ?>
   </div>
