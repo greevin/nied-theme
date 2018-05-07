@@ -20,12 +20,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
   /* color: black; */
 /* } */
 
-/* p { */
-    /* font-family: 'Roboto', Helvetica, Arial, serif; */
-    /* font-family: 'Open Sans', sans-serif; */
-/* } */
+p, strong {
+    font-family:'Open Sans', Helvetica, Arial, sans-serif;
+}
 
-.section-title, .jumbotron-title {
+.section-title, .jumbotron-title, .footer h6 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -77,6 +76,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .eventos .card-deck .card {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+.linha iframe {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }
 
@@ -139,7 +142,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border: 0;
 }
 
-.noticias .card-text .btn-link, .eventos .card-text .btn-link {
+.noticias .card-text .btn-link, .eventos .card-text .btn-link, .pesquisa .card-text .btn-link {
   padding: 0;
 }
 
@@ -152,6 +155,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
     background-position: center center;
     background-repeat: no-repeat;
     height: 200px;
+    overflow: hidden;
+}
+
+.blog-revista {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 425px;
     overflow: hidden;
 }
 
@@ -182,10 +193,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .fundo-azul span {
   display: table-cell;
-    vertical-align: middle;
-    height: 140px;
-    width: 150px;
-    padding: 0 15px;
+  vertical-align: middle;
+  height: 140px;
+  width: 150px;
+  padding: 0 15px;
+  font-family: 'Playfair Display', serif;
 }
 
 .divider {
@@ -208,4 +220,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 .card-cargo p.card-text {
     margin-bottom: 1px;
+}
+
+.bg-info {
+    background-color: #ADD1E7 !important;
+}
+
+.btn-outline-primary {
+    color: #007AB8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007AB8;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007AB8;
+    border-color: #007AB8;
 }
