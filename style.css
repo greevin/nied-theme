@@ -238,3 +238,14 @@ p, strong {
     background-color: #007AB8;
     border-color: #007AB8;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.customize-support .header {
+    margin-top: 32px;
+}
