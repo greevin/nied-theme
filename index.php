@@ -3,49 +3,34 @@
 <!-- jumbotron -->
 <div class="jumbotron jumbotron-fluid text-center introducao" style="margin-top: 116px;">
   <div class="container">
-    <?php $jumbotron = get_page_by_title('Página Inicial'); ?>
+    <?php $jumbotron = get_post(434); ?>
     <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo', $jumbotron); ?></h2>
     <p class="lead"><?php the_field('jumbotron_subtitulo', $jumbotron); ?></p>
-    <a href="o-nied" class="btn btn-dark my-2">SAIBA MAIS</a>
+    <a href="<?php the_field('link_da_pagina', $jumbotron) ?>" class="btn btn-dark my-2"><?php the_field('texto_do_botao', $jumbotron) ?></a>
   </div>
 </div>
 
 <!-- noticias -->
-<div class="noticias pagina-inicial">
+<section class="noticias pagina-inicial">
   <div class="container">
-    <div class="page-title" style="margin: 30px 0;text-transform: uppercase;">
-      <h3 class="text-center section-title">Notícias</h3>
+    <div class="section-title">
+      <h3>Notícias</h3>
       <div class="divider"></div>
     </div>
-    <div class="card-deck">
+    <div class="row">
       <?php
-         $args = array('category_name' => 'noticias', 'post_status' => 'publish', 'showposts' => 3);
-         $posts = get_posts($args);
-
-         if($posts) : foreach ($posts as $post) : setup_postdata($post);
-
+         $the_query = new WP_Query( array(
+           'category_name' => 'noticias',
+            'posts_per_page' => 3,
+         ));
       ?>
-    <div class="card">
-      <?php $urlImg = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>
-      <a class="card-img-top text-center" href="<?php the_permalink(); ?>">
-        <div class="<?php echo $urlImg == false ? 'fundo-logo' : 'fundo-branco'; ?>">
-				      <div class="blog-element" style="background-image: url(<?php echo $urlImg; ?>);"></div>
-			  </div>
-      </a>
-      <div class="card-body">
-        <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-        <p class="card-text"><?php the_excerpt(); ?></p>
-        <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
-      </div>
+      <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+        <?php include(TEMPLATEPATH . '/assets/includes/card.php'); ?>
+      <?php endwhile; endif; ?>
     </div>
-    <?php
-       endforeach;
-       endif;
-    ?>
-  </div>
     <p class="card-text text-center"><a href="#" class="btn btn-outline-primary">Mais Notícias</a></p>
   </div>
-</div>
+</section>
 
 <!-- revista -->
 <div class="revista pagina-inicial" style="background:#BBD5E7">
