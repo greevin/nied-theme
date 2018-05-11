@@ -44,3 +44,5 @@ function wp_load_scripts()
     wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'wp_load_scripts');
+
+add_image_size( 'custom-size', 300, 200, array( 'left', 'top' ) );
