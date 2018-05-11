@@ -1,9 +1,9 @@
 <?php
 // Template para o footer da página
 ?>
-<?php wp_footer(); ?>
 
-<div class="footer">
+<!-- footer -->
+<footer class="footer">
   <div class="container">
     <div class="row">
       <!-- licença -->
@@ -68,7 +68,9 @@
       </div>
     </div>
   </div>
-</div>
+</footer>
+
+<?php wp_footer(); ?>
 
 </body>
 
