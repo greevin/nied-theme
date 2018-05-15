@@ -24,14 +24,23 @@
   <nav class="navbar navbar-expand-lg navbar-light" style="background: white;box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)">
     <div class="container">
         <!-- caso não tenha o logo, mostra o nome -->
-        <?php
-          if (has_custom_logo()) {
-            the_custom_logo();
-          } else {
-            echo get_bloginfo('name');
-          }
-        ?>
-
+        <div class="logo-principal">
+          <?php
+            if (has_custom_logo()) {
+              the_custom_logo();
+            } else {
+              echo get_bloginfo('name');
+            }
+          ?>
+        </div>
+        <div class="logo-entidade-superior">
+          <a href="https://www.cocen.unicamp.br/">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cocen.png" alt="Logo Cocen - Coordenadoria dos Centros e Núcleos Interdisciplinares de Pesquisa da Unicamp" style="width: 70px;height: 60px;margin-left: 20px;">
+          </a>
+          <a href="http://www.unicamp.br/unicamp/">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-unicamp.png" alt="Logo Unicamp - Universidade de Campinas" style="width: 70px;height: 70px;margin-left: 20px;">
+          </a>
+        </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

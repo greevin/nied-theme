@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- jumbotron -->
-<div class="jumbotron jumbotron-fluid text-center introducao" style="margin-top: 116px;">
+<div class="jumbotron jumbotron-fluid text-center introducao" style="margin-top: 100px;">
   <div class="container">
     <?php $jumbotron = get_post(434); ?>
     <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo', $jumbotron); ?></h2>
