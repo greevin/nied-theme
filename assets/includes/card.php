@@ -2,7 +2,7 @@
 // Cards
 ?>
 <div class="col-md-4">
-  <div class="card mb-4 box-shadow">
+  <div class="card mb-4 box-shadow" style="height: 510px;">
     <!-- se o post tiver thumbnail -->
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
