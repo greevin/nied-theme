@@ -46,6 +46,15 @@ p, strong {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 0px;
+.introducao .display-4, .pagina-interna .display-4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.pagina-interna .jumbotron {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 }
 
 /* footer */
