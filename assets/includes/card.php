@@ -14,7 +14,7 @@
     <?php else : ?>
       <div class="text-center card-image-size">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-transparente.png" alt="<?php the_title_attribute(); ?>">
+          <img style="max-width: 75%;height: auto;" src="<?php bloginfo('template_url'); ?>/assets/images/logo-transparente.png" alt="<?php the_title_attribute(); ?>">
         </a>
       </div>
     <?php endif; ?>
