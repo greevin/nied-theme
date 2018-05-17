@@ -3,6 +3,28 @@
 ?>
 
 <!-- footer -->
+<?php
+  $args = array(
+    'name'      => 'rodape',
+    'post_type' => 'configuracoes_tema',
+    'post_status' => 'publish'
+  );
+  $campos_rodape_loop = new WP_Query( $args );
+  if ( $campos_rodape_loop->have_posts() ) :
+    while ( $campos_rodape_loop->have_posts() ) : $campos_rodape_loop->the_post();
+      // Seção Licença
+      $rodape_imagem = get_field('rodape_imagem');
+      $rodape_endereco_licenca = get_field('rodape_endereco_licenca');
+      $rodape_texto_licenca = get_field('rodape_texto_licenca');
+      // Seção Endereço
+      $rodape_nome_universidade = get_field('rodape_nome_universidade');
+      $rodape_endereco_universidade = get_field('rodape_endereco_universidade');
+      $rodape_telefone_universidade = get_field('rodape_telefone_universidade');
+      $rodape_fale_conosco = get_field('rodape_fale_conosco');
+      // Seção Mapa
+      $rodape_mapa = get_field('rodape_mapa');
+?>
+
 <footer class="footer">
   <div class="container">
     <div class="row">
@@ -11,8 +33,8 @@
         <div class="content">
           <h6>LICENÇA</h6>
           <div class="divider-footer"></div>
-          <a href="http://creativecommons.org/licenses/by/3.0/deed.pt" rel="license"><img alt="Licença Creative Commons" src="http://i.creativecommons.org/l/by/3.0/88x31.png" style="border-width:0"></a>
-          <p class="my-3">A não ser para conteúdos de terceiros ou quando claramente indicado, os conteúdos disponíveis neste site estão sob uma <a href="http://creativecommons.org/licenses/by/3.0/deed.pt" rel="license">Licença CC-BY</a>.</p>
+          <a href="<?php echo $rodape_endereco_licenca; ?>" rel="license"><img alt="Licença Creative Commons" src="<?php echo $rodape_imagem; ?>" style="border-width:0"></a>
+          <p class="my-3"><?php echo $rodape_texto_licenca; ?></p>
         </div>
       </div>
       <!-- endereco -->
@@ -20,8 +42,7 @@
         <div class="content">
           <h6>ENDEREÇO</h6>
           <div class="divider-footer"></div>
-          <b>Universidade Estadual de Campinas - UNICAMP</b>
-          <p>Cidade Universitária "Zeferino Vaz"</p>
+          <?php echo $rodape_nome_universidade; ?>
           <div class="endereco">
             <div class="row">
               <div class="col-md-1" style="margin: auto;">
@@ -29,8 +50,7 @@
               </div>
               <div class="col-md-11 info">
                 <small><b>Endereço</b></small>
-                <p>Rua Seis de Agosto, 50, Bloco V da Reitoria - 2º Piso</p>
-                <p>13083-873 | Campinas - SP - Brasil</p>
+                <p><?php echo $rodape_endereco_universidade; ?></p>
               </div>
             </div>
           </div>
@@ -41,7 +61,7 @@
               </div>
               <div class="col-md-11 info">
                 <small><b>Telefone</b></small>
-                <p>+55 19 3521-7350</p>
+                <p><?php echo $rodape_telefone_universidade; ?></p>
               </div>
             </div>
           </div>
@@ -52,7 +72,7 @@
               </div>
               <div class="col-md-11 info">
                 <small><b>Fale Conosco</b></small>
-                <p class><a href="mailto:contato@nied.unicamp.br">contato@nied.unicamp.br</a></p>
+                <p class><a href="mailto:<?php echo $rodape_fale_conosco; ?>"><?php echo $rodape_fale_conosco; ?></a></p>
               </div>
             </div>
           </div>
@@ -63,12 +83,18 @@
         <h6>MAPA</h6>
         <div class="divider-footer"></div>
         <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.452971945812!2d-47.068161585035845!3d-22.822724985054663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6ae52803bbb%3A0x4fc2997425647a99!2sR.+Seis+de+Agosto%2C+50+-+Cidade+Universit%C3%A1ria%2C+Campinas+-+SP%2C+13083-873!5e0!3m2!1spt-BR!2sbr!4v1524071193063"></iframe>
+          <iframe class="embed-responsive-item" src="<?php echo $rodape_mapa; ?>"></iframe>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
+<?php
+  endwhile;
+    wp_reset_postdata();
+  endif;
+?>
 
 <?php wp_footer(); ?>
 
