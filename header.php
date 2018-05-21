@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <!-- caso não tenha o logo, mostra o nome -->
-        <div class="logo-principal">
+        <div class="logo-principal logo">
           <?php
             if (has_custom_logo()) {
               the_custom_logo();
@@ -33,7 +33,7 @@
             }
           ?>
         </div>
-        <div class="logo-entidade-superior">
+        <div class="logo-entidade-superior logo">
           <a href="https://www.cocen.unicamp.br/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cocen.png" alt="Logo Cocen - Coordenadoria dos Centros e Núcleos Interdisciplinares de Pesquisa da Unicamp" style="width: 70px;height: 60px;margin-left: 20px;">
           </a>
