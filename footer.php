@@ -25,25 +25,25 @@
       $rodape_mapa = get_field('rodape_mapa');
 ?>
 
-<footer class="footer">
+<footer>
   <div class="container">
     <div class="row">
       <!-- licença -->
       <div class="col-lg-3 col-md-3 licenca">
         <div class="content">
           <h6>LICENÇA</h6>
-          <div class="divider-footer"></div>
+          <div class="title-divider"></div>
           <a href="<?php echo $rodape_endereco_licenca; ?>" rel="license"><img alt="Licença Creative Commons" src="<?php echo $rodape_imagem; ?>" style="border-width:0"></a>
           <p class="my-3"><?php echo $rodape_texto_licenca; ?></p>
         </div>
       </div>
       <!-- endereco -->
-      <div class="col-lg-5 col-md-5 endereco" style="border-left: 1px solid;border-right: 1px solid;">
+      <div class="col-lg-5 col-md-5 endereco">
         <div class="content">
           <h6>ENDEREÇO</h6>
-          <div class="divider-footer"></div>
+          <div class="title-divider"></div>
           <?php echo $rodape_nome_universidade; ?>
-          <div class="endereco">
+          <div class="endereco-universidade">
             <div class="row">
               <div class="col-md-1" style="margin: auto;">
                 <i class="fa fa-map-pin fa-2x" aria-hidden="true"></i>
@@ -81,7 +81,7 @@
       <!-- mapa -->
       <div class="col-lg-4 col-md-4 mapa">
         <h6>MAPA</h6>
-        <div class="divider-footer"></div>
+        <div class="title-divider"></div>
         <div class="embed-responsive embed-responsive-4by3">
           <iframe class="embed-responsive-item" src="<?php echo $rodape_mapa; ?>"></iframe>
         </div>

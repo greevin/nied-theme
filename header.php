@@ -20,8 +20,8 @@
 
 <body <?php body_class(); ?>>
 
-<header class="header">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background: white;box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <!-- caso não tenha o logo, mostra o nome -->
         <div class="logo-principal">
