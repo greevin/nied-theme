@@ -114,6 +114,32 @@ footer a, footer a:hover {
   text-decoration: underline;
 }
 
+/* cards */
+
+.custom-card .card-image-size {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-card .card-body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.custom-card .card-body p {
+  color: #575757;
+}
+
+.custom-card .card-text .btn-link {
+  padding: 0;
+}
+
+.custom-card .card-title a {
+  color: black;
+}
+
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */
 
 /* 5 colunas para colocar os logos dos parceiros */
