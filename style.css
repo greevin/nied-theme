@@ -140,6 +140,10 @@ footer a, footer a:hover {
   color: black;
 }
 
+.parceiros .card, .equipe .card {
+  border: 0;
+}
+
 /* pagina inicial */
 .pagina-inicial {
   padding: 20px 0;
@@ -155,6 +159,10 @@ footer a, footer a:hover {
   color: #007AB8;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.linha iframe {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }
 
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */

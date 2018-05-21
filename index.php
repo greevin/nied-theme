@@ -73,15 +73,15 @@
 </section>
 
 <!-- linha do tempo -->
-<div class="linha pagina-inicial" style="background: #f5f6f8;">
+<section class="linha pagina-inicial bg-light">
   <div class="container">
-    <div class="page-title" style="margin: 30px 0;text-transform: uppercase;">
-      <h3 class="text-center section-title">Linha do Tempo</h3>
+    <div class="section-title">
+      <h3>Linha do Tempo</h3>
       <div class="divider"></div>
     </div>
     <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1neiRyiwuE7Efe2J-vfhxvz9bNaDiV9LWbCoDbHYV2jw&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
   </div>
-</div>
+</section>
 
 <!-- parceiros -->
 <section class="parceiros pagina-inicial">
