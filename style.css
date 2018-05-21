@@ -28,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   background-size: cover;
   margin-top: 100px;
   margin-bottom: 0px;
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .introducao .display-4, .pagina-interna .display-4 {
@@ -138,6 +138,23 @@ footer a, footer a:hover {
 
 .custom-card .card-title a {
   color: black;
+}
+
+/* pagina inicial */
+.pagina-inicial {
+  padding: 20px 0;
+}
+
+.pagina-inicial .section-title h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pagina-inicial .section-title .divider {
+  border-bottom: 3px solid;
+  color: #007AB8;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */
