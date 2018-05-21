@@ -114,6 +114,29 @@ footer a, footer a:hover {
   text-decoration: underline;
 }
 
+.go-top {
+  position: fixed;
+  border-radius: 100%;
+  display: none;
+  font-size: 12px;
+  -webkit-mask-image: -webkit-radial-gradient(circle, #FFFFFF 100%, #000000 100%);
+  bottom: 3em;
+  right: 3em;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #000000;
+  opacity: 0.5;
+  font-size: 12px;
+  padding: 1em;
+  z-index: 999999;
+}
+
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF !important;
+  transition: all 0.5s ease 0s;
+}
+
 /* cards */
 
 .custom-card .card-image-size {

@@ -45,4 +45,29 @@ function wp_load_scripts()
 }
 add_action('wp_enqueue_scripts', 'wp_load_scripts');
 
+add_action('wp_footer', 'add_back_to_top');
+function add_back_to_top()
+{
+    ?>
+    <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('body').append('<a href="#" class="go-top"><span class="dashicons dashicons-arrow-up-alt2"></span></a>')
+                    // Show or hide the sticky footer button
+                    jQuery(window).scroll(function() {
+                        if (jQuery(this).scrollTop() > 400) {
+                            jQuery('.go-top').fadeIn();
+                        } else {
+                            jQuery('.go-top').fadeOut();
+                        }
+                    });
+                    // Animate the scroll to top
+                    jQuery('.go-top').click(function(event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({scrollTop: 0}, 800);
+                    })
+                });
+    </script>
+    <?php
+}
+
 add_image_size( 'custom-size', 300, 200, array( 'left', 'top' ) );
