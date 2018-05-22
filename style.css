@@ -169,6 +169,15 @@ footer a, footer a:hover {
   border: 0;
 }
 
+.custom-card .card-category {
+  text-transform: uppercase;
+  position: absolute;top: 170px;
+  left: 0px;
+  background: #f8f9fa!important;
+  padding: 5px 10px;
+  font-size: .85rem;
+}
+
 /* pagina inicial */
 .pagina-inicial {
   padding: 20px 0;

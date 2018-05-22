@@ -19,6 +19,9 @@
       </div>
     <?php endif; ?>
     <div class="card-body bg-light">
+      <div class="card-category">
+        <?php the_category( ' | ' ); ?>
+      </div>
       <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       <p class="card-text"><?php the_excerpt(); ?></p>
       <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
