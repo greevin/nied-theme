@@ -114,6 +114,7 @@ footer a, footer a:hover {
   text-decoration: underline;
 }
 
+/* "Voltar ao topo" */
 .go-top {
   position: fixed;
   border-radius: 100%;
@@ -135,6 +136,7 @@ footer a, footer a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   color: #FFFFFF !important;
   transition: all 0.5s ease 0s;
+  text-decoration: none;
 }
 
 /* cards */
@@ -186,6 +188,52 @@ footer a, footer a:hover {
 
 .linha iframe {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+
+/* Equipe */
+
+.equipe .circle-image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.equipe .card-cargo p.card-text {
+  margin-bottom: 1px;
+}
+
+.equipe .fundo-azul {
+  background: #004C77;
+  font-size: 5em;
+}
+
+.equipe .fundo-azul a {
+  color: white;
+}
+
+.equipe .fundo-azul a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.equipe .fundo-azul span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 140px;
+  width: 150px;
+  padding: 0 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.equipe .card-title a, .equipe .card-title a:hover {
+  color: black;
+}
+
+.equipe .card-cargo p {
+  color: #575757;
 }
 
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */
