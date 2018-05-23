@@ -26,12 +26,18 @@
         <!-- caso não tenha o logo, mostra o nome -->
         <div class="logo-principal logo">
           <?php
-            if (has_custom_logo()) {
-              the_custom_logo();
-            } else {
-              echo get_bloginfo('name');
-            }
-          ?>
+			       the_custom_logo();
+			       if ( is_front_page() && is_home() ) :
+				  ?>
+				  <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				  <?php else : ?>
+				      <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+  	      <?php endif;
+			     $nied_theme_description = get_bloginfo( 'description', 'display' );
+			     if ( $nied_theme_description || is_customize_preview() ) :
+	         ?>
+				   <p class="site-description"><?php echo $nied_theme_description; /* WPCS: xss ok. */ ?></p>
+			     <?php endif; ?>
         </div>
         <div class="logo-entidade-superior logo">
           <a href="https://www.cocen.unicamp.br/">
