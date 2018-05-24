@@ -203,6 +203,7 @@ footer a, footer a:hover {
   border-radius: 50%;
   background-size: cover;
   background-position: center center;
+  box-shadow: 0px 0px 0px 3px rgba(200,207,213,0.9);
 }
 
 .equipe .card-cargo p.card-text {
@@ -210,7 +211,7 @@ footer a, footer a:hover {
 }
 
 .equipe .fundo-azul {
-  background: #004C77;
+  background: #0076B5;
   font-size: 5em;
 }
 
