@@ -15,7 +15,7 @@ get_header();
          if($posts) : foreach ($posts as $post) : setup_postdata($post);
       ?>
       <div class="col-md-4 text-center">
-        <div class="card bg-info mb-3">
+        <div class="card mb-3" style="background: <?php the_field('cor_do_fundo') ?>;">
           <div class="card-body">
             <div style="margin: auto;padding: 20px;">
                 <i class="<?php the_field('icone'); ?>" aria-hidden="true"></i>
