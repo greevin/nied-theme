@@ -2,7 +2,7 @@
 // Cards
 ?>
 <div class="col-md-4 custom-card">
-  <div class="card mb-4 box-shadow" style="height: 510px;">
+  <div class="card mb-4 box-shadow">
     <!-- se o post tiver thumbnail -->
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
@@ -14,7 +14,7 @@
     <?php else : ?>
       <div class="text-center card-image-size">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <img style="max-width: 75%;height: auto;" src="<?php bloginfo('template_url'); ?>/assets/images/logo-transparente.png" alt="<?php the_title_attribute(); ?>">
+          <img style="max-width: 50%;height: auto;" src="<?php bloginfo('template_url'); ?>/assets/images/logo-transparente.png" alt="<?php the_title_attribute(); ?>">
         </a>
       </div>
     <?php endif; ?>
