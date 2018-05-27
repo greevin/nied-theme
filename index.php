@@ -22,7 +22,7 @@
     <div class="row">
       <?php
          $the_query = new WP_Query( array(
-           'category_name' => 'noticias',
+           'category_name' => 'noticias, eventos',
             'posts_per_page' => 3,
          ));
       ?>
@@ -30,7 +30,7 @@
         <?php include(TEMPLATEPATH . '/assets/includes/card.php'); ?>
       <?php endwhile; endif; ?>
     </div>
-    <p class="card-text text-center"><a href="#" class="btn btn-outline-primary">Mais Notícias</a></p>
+    <p class="card-text text-center"><a href="http://nied.test/noticias/" class="btn btn-outline-primary">Mais Notícias</a></p>
   </div>
 </section>
 
@@ -51,7 +51,7 @@
 ?>
   <div class="container">
     <div class="section-title">
-      <h3>Revista</h3>
+      <h3><?php the_field('nome_da_secao') ?></h3>
       <div class="divider"></div>
       <div class="row">
         <div class="col-md-4 col-lg-4 text-center">
