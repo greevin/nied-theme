@@ -10,6 +10,60 @@
   						<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
   					<?php endif; ?>
   					<?php the_content(); ?>
+            <table class="table">
+              <tbody>
+                <!-- Data de Início -->
+                <tr>
+                  <?php if( get_field('data_de_inicio') ): ?>
+                      <?php
+                        $start_date = get_field('data_de_inicio', false, false);
+                        $start_date = new DateTime($start_date);
+                      ?>
+                      <th scope="row">Data de Início</th>
+                      <td><?php echo $start_date->format('d/m/Y'); ?></td>
+                  <?php endif; ?>
+                </tr>
+                <!-- Horário de Início -->
+                <tr>
+                  <?php if( get_field('horario_de_inicio') ): ?>
+                    <th scope="row">Horário de Início</th>
+                    <td><?php the_field('horario_de_inicio'); ?></td>
+                  <?php endif; ?>
+                </tr>
+                <!-- Data de Fim -->
+                <tr>
+                  <?php if( get_field('data_de_fim') ): ?>
+                      <?php
+                        $end_date = get_field('data_de_fim', false, false);
+                        $end_date = new DateTime($end_date);
+                      ?>
+                      <th scope="row">Data de Fim</th>
+                      <td><?php echo $end_date->format('d/m/Y'); ?></td>
+                  <?php endif; ?>
+                </tr>
+                <!-- Horário de Fim -->
+                <tr>
+                  <?php if( get_field('horario_de_fim') ): ?>
+                    <th scope="row">Horário de Fim</th>
+                    <td><?php the_field('horario_de_fim'); ?></td>
+                  <?php endif; ?>
+                </tr>
+                <!-- Local -->
+                <tr>
+                  <?php if( get_field('local') ): ?>
+                    <th scope="row">Local</th>
+                    <td><?php the_field('local'); ?></td>
+                  <?php endif; ?>
+                </tr>
+                <!-- Mais Informações -->
+                <tr>
+                  <?php if( get_field('mais_informacoes') ): ?>
+                    <th scope="row">Mais Informações</th>
+                    <td><?php the_field('mais_informacoes'); ?></td>
+                  <?php endif; ?>
+                </tr>
+              </tbody>
+            </table>
   				</article>
   			<?php endwhile; endif; ?>
   	</div>
