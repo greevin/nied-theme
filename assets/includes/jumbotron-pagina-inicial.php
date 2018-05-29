@@ -1,5 +1,5 @@
 <?php
-// Jumbotron para as páginas internas
+// Jumbotron para a página inicial
 ?>
 
 <section class="introducao">

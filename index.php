@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- jumbotron -->
-<?php include(TEMPLATEPATH . '/assets/includes/jumbotron-inicial.php'); ?>
+<?php include(TEMPLATEPATH . '/assets/includes/jumbotron-pagina-inicial.php'); ?>
 
 <!-- noticias -->
 <section class="noticias pagina-inicial">
@@ -26,42 +26,7 @@
 </section>
 
 <!-- revista -->
-<section class="revista pagina-inicial" style="background:#BBD5E7">
-  <?php
-  $args = array(
-    'name'      => 'revistas',
-    'post_type' => 'configuracoes_tema',
-    'post_status' => 'publish'
-  );
-  $edicao_atual_loop = new WP_Query( $args );
-  if ( $edicao_atual_loop->have_posts() ) :
-    while ( $edicao_atual_loop->have_posts() ) : $edicao_atual_loop->the_post();
-      $texto_apresentacao = get_field('texto_apresentacao');
-      $imagem_da_edicao_atual = get_field('imagem_da_edicao_atual');
-      $link_edicao_atual = get_field('link_edicao_atual');
-?>
-  <div class="container">
-    <div class="section-title">
-      <h3><?php the_field('nome_da_secao') ?></h3>
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col-md-4 col-lg-4 text-center">
-          <img alt="Licença Creative Commons" src="<?php echo $imagem_da_edicao_atual; ?>" style="border-width:0">
-        </div>
-        <div class="col-md-8 col-lg-8">
-          <?php echo $texto_apresentacao; ?>
-          <a href="<?php echo $link_edicao_atual; ?>" class="btn btn-primary">Edição Atual</a>
-          <a href="http://nied.test/revista/" class="btn btn-secondary">Edições Anteriores</a>
-        </div>
-      </div>
-    </div>
-    <?php
-  endwhile;
-    wp_reset_postdata();
-  endif;
-    ?>
-  </div>
-</section>
+<?php include(TEMPLATEPATH . '/assets/includes/revista-pagina-inicial.php'); ?>
 
 <!-- linha do tempo -->
 <section class="linha pagina-inicial bg-light">
