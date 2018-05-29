@@ -1,16 +1,7 @@
 <?php get_header(); ?>
 
 <!-- jumbotron -->
-<section class="introducao">
-  <div class="jumbotron jumbotron-fluid text-center">
-    <div class="container">
-      <?php $jumbotron = get_post(434); ?>
-      <h2 class="display-4 jumbotron-title"><?php the_field('jumbotron_titulo', $jumbotron); ?></h2>
-      <p class="lead"><?php the_field('jumbotron_subtitulo', $jumbotron); ?></p>
-      <a href="<?php the_field('link_da_pagina', $jumbotron) ?>" class="btn btn-dark my-2"><?php the_field('texto_do_botao', $jumbotron) ?></a>
-    </div>
-  </div>
-</section>
+<?php include(TEMPLATEPATH . '/assets/includes/jumbotron-inicial.php'); ?>
 
 <!-- noticias -->
 <section class="noticias pagina-inicial">
