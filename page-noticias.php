@@ -10,7 +10,7 @@ get_header();
   <div class="container">
     <div class="row">
       <?php
-         $args = array('category_name' => 'noticias, eventos', 'post_status' => 'publish');
+         $args = array('category_name' => 'noticia, evento', 'posts_per_page' => -1, 'post_status' => 'publish');
          $posts = get_posts($args);
 
          if($posts) : foreach ($posts as $post) : setup_postdata($post);

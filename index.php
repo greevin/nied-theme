@@ -13,7 +13,7 @@
     <div class="row">
       <?php
          $the_query = new WP_Query( array(
-           'category_name' => 'noticias, eventos',
+           'category_name' => 'noticia, evento',
             'posts_per_page' => 3,
          ));
       ?>
