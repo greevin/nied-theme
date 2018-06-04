@@ -148,7 +148,7 @@ footer a, footer a:hover {
   padding-right: 10px;
 }
 
-.custom-card .card-body p {
+.custom-card .card-body p, .card-body span {
   color: #575757;
 }
 
