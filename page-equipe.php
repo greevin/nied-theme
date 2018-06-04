@@ -18,7 +18,9 @@ get_header();
 
            if($posts) : foreach ($posts as $post) : setup_postdata($post);
         ?>
-        <?php include(TEMPLATEPATH . '/assets/includes/card-equipe.php'); ?>
+        <?php if( ! get_field('data_de_fim') ): ?>
+          <?php include(TEMPLATEPATH . '/assets/includes/card-equipe.php'); ?>
+        <?php endif; ?>
         <?php
            endforeach;
            endif;
@@ -31,12 +33,14 @@ get_header();
       <h3 class="text-center section-title" style="margin-bottom: 30px;">Anterior</h3>
       <div class="row">
         <?php
-           $args = array('post_type' => 'equipe', 'category_name' => 'equipe-anterior', 'post_status' => 'publish');
+           $args = array('post_type' => 'equipe', 'post_status' => 'publish');
            $posts = get_posts($args);
 
            if($posts) : foreach ($posts as $post) : setup_postdata($post);
         ?>
-        <?php include(TEMPLATEPATH . '/assets/includes/card-equipe.php'); ?>
+        <?php if( get_field('data_de_fim') ): ?>
+          <?php include(TEMPLATEPATH . '/assets/includes/card-equipe.php'); ?>
+        <?php endif; ?>
         <?php
            endforeach;
            endif;
