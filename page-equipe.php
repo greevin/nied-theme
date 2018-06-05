@@ -13,7 +13,7 @@ get_header();
       <h3 class="text-center section-title" style="margin-bottom: 30px;">Atual</h3>
       <div class="row">
         <?php
-           $args = array('post_type' => 'equipe', 'post_status' => 'publish', 'posts_per_page' => -1);
+           $args = array('post_type' => 'equipe', 'post_status' => 'publish', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC');
            $posts = get_posts($args);
 
            if($posts) : foreach ($posts as $post) : setup_postdata($post);
@@ -33,7 +33,7 @@ get_header();
       <h3 class="text-center section-title" style="margin-bottom: 30px;">Anterior</h3>
       <div class="row">
         <?php
-           $args = array('post_type' => 'equipe', 'post_status' => 'publish');
+           $args = array('post_type' => 'equipe', 'post_status' => 'publish', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC');
            $posts = get_posts($args);
 
            if($posts) : foreach ($posts as $post) : setup_postdata($post);
