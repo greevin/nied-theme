@@ -12,16 +12,13 @@
     </div>
     <div class="row">
       <?php
-         $the_query = new WP_Query( array(
-           'category_name' => 'noticia, evento',
-            'posts_per_page' => 3,
-         ));
+         $the_query = new WP_Query( array('category_name' => 'noticia, evento', 'posts_per_page' => 3,));
       ?>
       <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <?php include(TEMPLATEPATH . '/assets/includes/card.php'); ?>
       <?php endwhile; endif; ?>
     </div>
-    <p class="card-text text-center"><a href="http://nied.test/noticias/" class="btn btn-outline-primary">Mais Notícias</a></p>
+    <p class="card-text text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>noticias/" class="btn btn-outline-primary">Mais Notícias</a></p>
   </div>
 </section>
 
