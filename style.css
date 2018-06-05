@@ -241,6 +241,40 @@ footer a, footer a:hover {
   color: #575757;
 }
 
+/* Pagination */
+.navigation h2 {
+  display: none;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.navigation .nav-links {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+
+.navigation .page-numbers {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.navigation .current {
+  z-index: 1;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */
 
 /* 5 colunas para colocar os logos dos parceiros */
