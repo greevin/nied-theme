@@ -20,7 +20,7 @@
     <?php endif; ?>
     <div class="card-body bg-light">
       <div class="card-category">
-        <?php the_category( ' | ' ); ?>
+        <?php the_terms( $post->ID, 'category', '', ' | ' ); ?>
       </div>
     <?php
       $categories = get_the_category();
