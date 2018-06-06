@@ -27,7 +27,7 @@
       if($categories[0]->name !== 'Evento') :
     ?>
       <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-      <p class="card-text"><?php the_excerpt(); ?></p>
+      <p class="card-text"><?php echo wp_trim_words(get_the_content(), 25, '...' ); ?></p>
       <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
       <div class="d-flex justify-content-between align-items-center"></div>
     <?php else : ?>
