@@ -18,7 +18,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background: #f6f8fa;">
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light">

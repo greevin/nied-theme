@@ -4,7 +4,7 @@
 <?php include(TEMPLATEPATH . '/assets/includes/jumbotron-pagina-inicial.php'); ?>
 
 <!-- noticias -->
-<section class="noticias pagina-inicial">
+<section class="noticias pagina-inicial" style="background: white;">
   <div class="container">
     <div class="section-title">
       <h3>Notícias</h3>
@@ -37,7 +37,7 @@
 </section>
 
 <!-- parceiros -->
-<section class="parceiros pagina-inicial">
+<section class="parceiros pagina-inicial" style="background: white;">
   <div class="container">
     <div class="row text-center">
       <?php

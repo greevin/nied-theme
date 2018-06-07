@@ -6,7 +6,7 @@ get_header();
 <?php include(TEMPLATEPATH . '/assets/includes/jumbotron.php'); ?>
 
 <!-- equipes -->
-<div class="equipe pagina-inicial">
+<div class="equipe pagina-inicial" style="background: white;">
   <div class="container">
     <div class="equipe-atual">
       <div class="divider"></div>

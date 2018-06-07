@@ -9,16 +9,16 @@
   <div class="equipe-info">
     <table class="table">
       <tbody>
-        <!-- Cargo -->
+        <!-- Coordenador -->
         <tr>
-          <?php if( get_field('cargo') ): ?>
-            <th scope="row">Função</th>
+          <?php if( get_field('coordenador') ): ?>
+            <th scope="row">Coordenador</th>
             <td>
               <?php
-                $cargos = get_field('cargo');
-                if( $cargos ): ?>
-                	<?php foreach( $cargos as $cargo ): ?>
-                	  <?php echo $cargo; ?><br>
+                $posts = get_field('coordenador');
+                if( $posts ): ?>
+                	<?php foreach( $posts as $p ): ?>
+                	  <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a><br>
                 	<?php endforeach; ?>
               <?php endif; ?>
             </td>
@@ -66,20 +66,6 @@
               ?>
               <th scope="row">Data de Fim</th>
               <td><?php echo $end_date->format('d/m/Y'); ?></td>
-          <?php endif; ?>
-        </tr>
-        <!-- Currículo Lattes -->
-        <tr>
-          <?php if( get_field('curriculo_lattes') ): ?>
-            <th scope="row">Currículo Lattes</th>
-            <td><a href="<?php the_field('curriculo_lattes'); ?>"><?php the_field('curriculo_lattes'); ?></a></td>
-          <?php endif; ?>
-        </tr>
-        <!-- Página Pessoal -->
-        <tr>
-          <?php if( get_field('pagina_pessoal') ): ?>
-            <th scope="row">Página Pessoal</th>
-            <td><a href="<?php the_field('pagina_pessoal'); ?>"><?php the_field('pagina_pessoal'); ?></a></td>
           <?php endif; ?>
         </tr>
         <!-- Projetos -->
