@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div class="container" style="margin-bottom: 30px;margin-top: 140px;background: #fff;border-radius: 3px;box-shadow: 0 1px 3px rgba(0,0,0,.1);">
+<div class="container single-container">
   <div class="row">
   	<div class="col-xs-12 col-sm-12">
   		<?php if (have_posts()): while (have_posts()): the_post(); ?>
-  				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="padding: 30px 60px;">
+  				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   					<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-            <div class="mb-3" style="color: grey; margin-top: -5px;">Postado em: <?php the_date('d/m/Y', '<span>', '</span>'); ?> | <?php the_terms( $post->ID, 'category', '', ' | ' ); ?></div>
+            <div class="mb-3 post-meta"><small>Postado em: <?php the_date('d/m/Y', '<span>', '</span>'); ?> | <?php the_terms( $post->ID, 'category', '', ' | ' ); ?></small></div>
   					<?php if (has_post_thumbnail()): ?>
   						<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
   					<?php endif; ?>

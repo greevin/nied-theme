@@ -275,6 +275,24 @@ footer a, footer a:hover {
   border-color: #343a40;
 }
 
+/* single */
+.single-container {
+  margin-bottom: 30px;
+  margin-top: 140px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.single-container article {
+  padding: 30px 60px;
+}
+
+.single-container .post-meta {
+  color: grey;
+  margin-top: -10px;
+}
+
 /* https://blog.polarbits.co/2014/02/16/quick-tips-5-column-layout-with-twitter-bootstrap/ */
 
 /* 5 colunas para colocar os logos dos parceiros */
