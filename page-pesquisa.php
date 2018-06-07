@@ -8,7 +8,7 @@ get_header();
 <!-- Projetos -->
 <div class="pesquisa pagina-inicial" style="background: white;">
   <div class="container">
-    <div class="equipe-atual">
+    <div class="em-andamento">
       <div class="divider"></div>
       <h3 class="text-center section-title" style="margin-bottom: 30px;">Em Andamento</h3>
       <div class="row">
@@ -28,7 +28,7 @@ get_header();
       </div>
     </div>
 
-    <div class="equipe-anterior">
+    <div class="finalizados">
       <div class="divider"></div>
       <h3 class="text-center section-title" style="margin-bottom: 30px;">Finalizados</h3>
       <div class="row">
