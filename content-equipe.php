@@ -89,11 +89,14 @@
             <td>
               <?php
                 $posts = get_field('projetos');
+
                 if( $posts ): ?>
-                	<?php foreach( $posts as $p ): ?>
-                	  <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a><br>
-                	<?php endforeach; ?>
-              <?php endif; ?>
+                  <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+                    <?php setup_postdata($post); ?>
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                  <?php endforeach; ?>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                <?php endif; ?>
             </td>
           <?php endif; ?>
         </tr>
