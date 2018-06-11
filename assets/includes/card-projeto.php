@@ -7,12 +7,12 @@
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <?php the_post_thumbnail('custom-size'); ?>
+          <?php the_post_thumbnail(); ?>
         </a>
       </div>
       <!-- senao, apenas mostra o logo -->
     <?php else : ?>
-      <div class="text-center card-image-size">
+      <div class="text-center card-image-size logo-center">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
           <img style="max-width: 50%;height: auto;" src="<?php bloginfo('template_url'); ?>/assets/images/logo-transparente.png" alt="<?php the_title_attribute(); ?>">
         </a>
