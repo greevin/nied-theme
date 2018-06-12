@@ -187,6 +187,10 @@ footer a, footer a:hover {
   max-width: 100%;
 }
 
+.parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 /* pagina inicial */
 .pagina-inicial {
   padding: 20px 0;
