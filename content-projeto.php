@@ -6,7 +6,7 @@
     <div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
   <?php endif; ?>
   <?php the_content(); ?>
-  <div class="equipe-info">
+  <div class="equipe-info" style="padding-top: 2rem;">
     <table class="table">
       <tbody>
         <!-- Coordenador -->
