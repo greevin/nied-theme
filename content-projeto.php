@@ -94,6 +94,13 @@
             </td>
           <?php endif; ?>
         </tr>
+        <!-- Mais Informações -->
+        <tr>
+          <?php if( get_field('url_projeto') ): ?>
+            <th scope="row">Mais Informações</th>
+            <td><a href="<?php the_field('url_projeto'); ?>"><?php the_field('url_projeto'); ?></a></td>
+          <?php endif; ?>
+        </tr>
       </tbody>
     </table>
   </div>
