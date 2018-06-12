@@ -13,15 +13,14 @@
         <tr>
           <?php if( get_field('coordenador') ): ?>
             <th scope="row">Coordenador</th>
-            <td>
-              <?php
-                $posts = get_field('coordenador');
-                if( $posts ): ?>
-                	<?php foreach( $posts as $p ): ?>
-                	  <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a><br>
-                	<?php endforeach; ?>
-              <?php endif; ?>
-            </td>
+            <td><?php the_field('coordenador'); ?></td>
+          <?php endif; ?>
+        </tr>
+        <!-- E-mail -->
+        <tr>
+          <?php if( get_field('email') ): ?>
+            <th scope="row">E-mail</th>
+            <td><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></td>
           <?php endif; ?>
         </tr>
         <!-- Linha de Pesquisa -->
@@ -37,13 +36,6 @@
                 	<?php endforeach; ?>
               <?php endif; ?>
             </td>
-          <?php endif; ?>
-        </tr>
-        <!-- E-mail -->
-        <tr>
-          <?php if( get_field('email') ): ?>
-            <th scope="row">E-mail</th>
-            <td><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a></td>
           <?php endif; ?>
         </tr>
         <!-- Data de Início -->
@@ -70,16 +62,19 @@
         </tr>
         <!-- Projetos -->
         <tr>
-          <?php if( get_field('projetos') ): ?>
-            <th scope="row">Projetos no NIED</th>
+          <?php if( get_field('equipe') ): ?>
+            <th scope="row">Equipe</th>
             <td>
               <?php
-                $posts = get_field('projetos');
+                $posts = get_field('equipe');
+
                 if( $posts ): ?>
-                	<?php foreach( $posts as $p ): ?>
-                	  <a href="<?php echo get_permalink( $p->ID ); ?>"><?php echo get_the_title( $p->ID ); ?></a><br>
-                	<?php endforeach; ?>
-              <?php endif; ?>
+                    <?php foreach( $posts as $post ): // variable must be called $post (IMPORTANT) ?>
+                        <?php setup_postdata($post); ?>
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                <?php endif; ?>
             </td>
           <?php endif; ?>
         </tr>
