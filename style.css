@@ -191,6 +191,16 @@ footer a, footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.parceiros  div  .card {
+  max-width: 100px;
+}
+.parceiros img {
+  width: 100%;
+  height: 100%;
+}
+
 /* pagina inicial */
 .pagina-inicial {
   padding: 20px 0;
