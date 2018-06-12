@@ -67,11 +67,27 @@
             <td>
               <?php
                 $posts = get_field('equipe');
-
                 if( $posts ): ?>
                     <?php foreach( $posts as $post ): // variable must be called $post (IMPORTANT) ?>
                         <?php setup_postdata($post); ?>
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+                <?php endif; ?>
+            </td>
+          <?php endif; ?>
+        </tr>
+        <!-- Parceiros -->
+        <tr>
+          <?php if( get_field('parceiros') ): ?>
+            <th scope="row">Parceiros</th>
+            <td>
+              <?php
+                $posts = get_field('parceiros');
+                if( $posts ): ?>
+                    <?php foreach( $posts as $post ): // variable must be called $post (IMPORTANT) ?>
+                        <?php setup_postdata($post); ?>
+                        <?php the_title(); ?><br>
                     <?php endforeach; ?>
                     <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
                 <?php endif; ?>
