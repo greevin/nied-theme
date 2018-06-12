@@ -12,13 +12,16 @@
 <div id="primary" class="pagina-inicial">
   <div class="container">
     <div class="row">
-      <?php if ( have_posts() ) : ?>
-        <?php
-          /* Start the Loop */
-          while ( have_posts() ) : the_post();
-            include(TEMPLATEPATH . '/assets/includes/card.php');
-          endwhile;
-        ?>
+      <div class="card-columns">
+        <?php if ( have_posts() ) : ?>
+          <?php
+            /* Start the Loop */
+            while ( have_posts() ) : the_post(); ?>
+            <?php
+              include(TEMPLATEPATH . '/assets/includes/card-columns.php');
+            endwhile;
+          ?>
+      </div>
     </div>
     <?php
       the_posts_pagination( array(
