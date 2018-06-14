@@ -239,7 +239,9 @@ footer a, footer a:hover {
 }
 
 .equipe .fundo-azul {
-  background: #0076B5;
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 5em;
 }
 
@@ -257,8 +259,8 @@ footer a, footer a:hover {
   vertical-align: middle;
   height: 140px;
   width: 150px;
-  padding: 0 15px;
-  font-family: 'Playfair Display', serif;
+  padding: 0 25px;
+  text-transform: uppercase;
 }
 
 .equipe .card-title a, .equipe .card-title a:hover {
