@@ -9,7 +9,7 @@ get_header();
   <div class="container">
     <div class="row">
       <?php
-         $args = array('post_type' => 'biblioteca', 'category_name' => 'bibiliotecadigital', 'post_status' => 'publish', 'posts_per_page' => -1);
+         $args = array('post_type' => 'biblioteca', 'category_name' => 'biblioteca-digital', 'post_status' => 'publish', 'posts_per_page' => -1);
          $posts = get_posts($args);
 
          if($posts) : foreach ($posts as $post) : setup_postdata($post);
