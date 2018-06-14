@@ -175,12 +175,12 @@ footer a, footer a:hover {
 
 .custom-card .card-category {
   text-transform: uppercase;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  background: #f8f9fa!important;
-  padding: 5px 10px;
+  padding-bottom: 7px;
   font-size: .85rem;
+}
+
+.custom-card .card-image-size {
+  padding-top: 10px;
 }
 
 .custom-card img {
