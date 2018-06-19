@@ -69,7 +69,7 @@ header .nav-link {
 }
 
 header .navbar {
-  min-height: 100px;
+  padding: 1rem 3rem;
 }
 
 header .logo-entidade-superior a:hover {
@@ -79,6 +79,19 @@ header .logo-entidade-superior a:hover {
 header .logo a:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,.0);
+  margin-left: auto;
+}
+
+.navbar>.container, .navbar>.container-fluid {
+  justify-content: start;
+}
+
+.navbar-collapse {
+  padding-top: 20px;
 }
 
 .customize-support header {
