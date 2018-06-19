@@ -60,7 +60,7 @@
               <td><?php echo $end_date->format('d/m/Y'); ?></td>
           <?php endif; ?>
         </tr>
-        <!-- Projetos -->
+        <!-- Equipe -->
         <tr>
           <?php if( get_field('equipe') ): ?>
             <th scope="row">Equipe</th>

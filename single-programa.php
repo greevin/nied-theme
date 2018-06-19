@@ -6,7 +6,6 @@
   		<?php if (have_posts()): while (have_posts()): the_post(); ?>
   				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   					<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-            <p>Programa</p>
             <div class="mb-3 post-meta"><small>Postado em: <?php the_date('d/m/Y', '<span>', '</span>'); ?> | <?php the_terms( $post->ID, 'category', '', ' | ' ); ?></small></div>
   					<?php if (has_post_thumbnail()): ?>
   						<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
