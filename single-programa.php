@@ -15,9 +15,9 @@
             <table class="table">
               <tbody>
                 <tr>
-                  <?php if( get_field('ano_software') ): ?>
+                  <?php if( get_field('ano_programa') ): ?>
                     <th scope="row">Ano</th>
-                    <td><?php the_field('ano_software'); ?></td>
+                    <td><?php the_field('ano_programa'); ?></td>
                   <?php endif; ?>
                 </tr>
                 <tr>
