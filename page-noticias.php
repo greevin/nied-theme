@@ -1,5 +1,5 @@
 <?php
-// Template Name: Pesquisa
+// Template Name: Notícias
 get_header();
 ?>
 
