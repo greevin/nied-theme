@@ -6,9 +6,9 @@ get_header();
 <?php include(TEMPLATEPATH . '/assets/includes/jumbotron.php'); ?>
 
 <!-- noticias -->
-<div class="pesquisa pagina-inicial">
+<div class="pesquisa pagina-inicial" style="background: white;">
   <div class="container">
-    <div class="row">
+    <div class="row grid-row">
       <?php
          $args = array('category_name' => 'noticia, evento', 'posts_per_page' => -1, 'post_status' => 'publish');
          $posts = get_posts($args);

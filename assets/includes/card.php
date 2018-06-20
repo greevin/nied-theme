@@ -1,9 +1,9 @@
 <?php
 // Cards
 ?>
-<div class="col-md-6 col-lg-4 custom-card">
+<div class="custom-card">
   <div class="card mb-4 box-shadow">
-    <!-- se o post tiver thumbnail -->
+    <!-- se o post tiver thumbnail do card -->
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -60,6 +60,7 @@
             <?php endif; ?>
           <?php endif; ?>
           <!-- Fim do Horario -->
+          <br>
           <!-- Local -->
           <?php if( get_field('local') ): ?>
             <span>Local: </span>

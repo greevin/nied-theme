@@ -11,17 +11,15 @@
 
 <div id="primary" class="pagina-inicial">
   <div class="container">
-    <div class="row">
-      <div class="card-columns">
-        <?php if ( have_posts() ) : ?>
+    <div class="row grid-row">
+      <?php if ( have_posts() ) : ?>
+        <?php
+          /* Start the Loop */
+          while ( have_posts() ) : the_post(); ?>
           <?php
-            /* Start the Loop */
-            while ( have_posts() ) : the_post(); ?>
-            <?php
-              include(TEMPLATEPATH . '/assets/includes/card-columns.php');
-            endwhile;
-          ?>
-      </div>
+            include(TEMPLATEPATH . '/assets/includes/card.php');
+          endwhile;
+        ?>
     </div>
     <?php
       the_posts_pagination( array(

@@ -10,7 +10,7 @@
       <h3>Notícias</h3>
       <div class="divider"></div>
     </div>
-    <div class="row">
+    <div class="row grid-row">
       <?php
          $the_query = new WP_Query( array('category_name' => 'noticia, evento', 'posts_per_page' => 3,));
       ?>
