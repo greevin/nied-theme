@@ -2,7 +2,7 @@
 // Card utilizado na página 'Equipe'
 ?>
 <div class="col-md-4 col-lg-3">
-  <div class="card text-center">
+  <div class="text-center">
     <div class="card-image">
       <?php $urlImg = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>
       <div class="circle-image fundo-azul">
