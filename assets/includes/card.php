@@ -2,7 +2,7 @@
 // Cards
 ?>
 <div class="custom-card">
-  <div class="card mb-4 box-shadow">
+  <div class="card mb-5 box-shadow">
     <!-- se o post tiver thumbnail do card -->
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
