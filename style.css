@@ -90,10 +90,6 @@ header .logo a:hover {
   justify-content: start;
 }
 
-.navbar-collapse {
-  padding-top: 20px;
-}
-
 .customize-support header {
   margin-top: 32px;
 }
@@ -155,7 +151,7 @@ footer a, footer a:hover {
 
 
 .logo-center {
-  height: 200px;
+  height: 150px;
 }
 
 .logo-center:before {
@@ -190,10 +186,6 @@ footer a, footer a:hover {
   text-transform: uppercase;
   padding-bottom: 7px;
   font-size: .85rem;
-}
-
-.custom-card .card-image-size {
-  padding-top: 10px;
 }
 
 .custom-card img {

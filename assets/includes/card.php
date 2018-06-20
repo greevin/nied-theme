@@ -19,51 +19,56 @@
       </div>
     <?php endif; ?>
     <div class="card-body bg-light">
+      <!-- adiciona as categorias -->
       <div class="card-category">
         <?php the_terms( $post->ID, 'category', '', ' | ' ); ?>
       </div>
-    <?php
-      $categories = get_the_category();
-      if($categories[0]->name !== 'Evento') :
-    ?>
+      <!-- se a categoria não for Eventos -->
+      <?php
+        $categories = get_the_category();
+        if($categories[0]->name != 'Evento') :
+      ?>
       <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       <p class="card-text"><?php echo wp_trim_words(get_the_content(), 25, '...' ); ?></p>
-      <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
-      <div class="d-flex justify-content-between align-items-center"></div>
-    <?php else : ?>
-       <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-       <p class="card-text">
-         <?php if( get_field('data_de_inicio') ): ?>
-             <?php
-               $start_date = get_field('data_de_inicio', false, false);
-               $start_date = new DateTime($start_date);
+      <!-- se a categoria for Eventos -->
+      <?php else : ?>
+        <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+        <p class="card-text">
+          <!-- Data -->
+          <?php if( get_field('data_de_inicio') ): ?>
+            <?php
+              $start_date = get_field('data_de_inicio', false, false);
+              $start_date = new DateTime($start_date);
 
-               $end_date = get_field('data_de_fim', false, false);
-               $end_date = new DateTime($end_date);
-             ?>
-             <span class="card-text">Data: </span>
-             <span><?php echo $start_date->format('d/m/Y'); ?></span>
-             <?php if( get_field('data_de_fim') &&  $start_date->format('d/m/Y') != $end_date->format('d/m/Y')): ?>
-               <span> - <?php echo $end_date->format('d/m/Y'); ?></span>
-             <?php endif; ?>
-             <br>
-         <?php endif; ?>
-         <?php if( get_field('horario_de_inicio') ): ?>
-             <span>Horário: </span>
-             <span><?php the_field('horario_de_inicio'); ?></span>
-             <?php if( get_field('horario_de_fim') ): ?>
-               <span> - <?php the_field('horario_de_fim'); ?></span>
-             <?php endif; ?>
-            <br>
-         <?php endif; ?>
-         <?php if( get_field('local') ): ?>
-           <span>Local: </span>
-           <span><?php the_field('local'); ?></span>
-         <?php endif; ?>
-             <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
-             <div class="d-flex justify-content-between align-items-center"></div>
-        <?php endif; ?>
-       </p>
+              $end_date = get_field('data_de_fim', false, false);
+              $end_date = new DateTime($end_date);
+            ?>
+            <span class="card-text">Data: </span>
+            <span><?php echo $start_date->format('d/m/Y'); ?></span>
+            <?php if( get_field('data_de_fim') &&  $start_date->format('d/m/Y') != $end_date->format('d/m/Y')): ?>
+              <span> - <?php echo $end_date->format('d/m/Y'); ?></span>
+            <?php endif; ?>
+          <?php endif; ?>
+          <br>
+          <!-- Fim da Data -->
+          <!-- Horario -->
+          <?php if( get_field('horario_de_inicio') ): ?>
+            <span>Horário: </span>
+            <span><?php the_field('horario_de_inicio'); ?></span>
+            <?php if( get_field('horario_de_fim') ): ?>
+              <span> - <?php the_field('horario_de_fim'); ?></span>
+            <?php endif; ?>
+          <?php endif; ?>
+          <!-- Fim do Horario -->
+          <!-- Local -->
+          <?php if( get_field('local') ): ?>
+            <span>Local: </span>
+            <span><?php the_field('local'); ?></span>
+          <?php endif; ?>
+          <!-- Fim do Local -->
+        </p>
+      <?php endif; ?>
+      <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">Leia Mais »</a></p>
     </div>
   </div>
 </div>
