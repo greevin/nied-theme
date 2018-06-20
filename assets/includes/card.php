@@ -43,27 +43,27 @@
               $end_date = get_field('data_de_fim', false, false);
               $end_date = new DateTime($end_date);
             ?>
-            <span class="card-text">Data: </span>
+            <span class="card-text"><i class="fa fa-calendar"></i></span>
             <span><?php echo $start_date->format('d/m/Y'); ?></span>
             <?php if( get_field('data_de_fim') &&  $start_date->format('d/m/Y') != $end_date->format('d/m/Y')): ?>
               <span> - <?php echo $end_date->format('d/m/Y'); ?></span>
             <?php endif; ?>
+            <br>
           <?php endif; ?>
-          <br>
           <!-- Fim da Data -->
           <!-- Horario -->
           <?php if( get_field('horario_de_inicio') ): ?>
-            <span>Horário: </span>
+            <span><i class="fa fa-clock-o"></i></span>
             <span><?php the_field('horario_de_inicio'); ?></span>
             <?php if( get_field('horario_de_fim') ): ?>
               <span> - <?php the_field('horario_de_fim'); ?></span>
             <?php endif; ?>
+            <br>
           <?php endif; ?>
           <!-- Fim do Horario -->
-          <br>
           <!-- Local -->
           <?php if( get_field('local') ): ?>
-            <span>Local: </span>
+            <span><i class="fa fa-map-marker"></i></span>
             <span><?php the_field('local'); ?></span>
           <?php endif; ?>
           <!-- Fim do Local -->
