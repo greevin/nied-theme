@@ -7,7 +7,7 @@
     <?php if( has_post_thumbnail() ): ?>
       <div class="text-center card-image-size">
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <?php the_post_thumbnail(); ?>
+          <?php the_post_thumbnail('custom-size'); ?>
         </a>
       </div>
       <!-- senao, apenas mostra o logo -->

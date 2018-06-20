@@ -78,8 +78,4 @@ function add_back_to_top()
     <?php
 }
 
-add_image_size( 'custom-size', 300, 200, array( 'left', 'top' ) );
-add_image_size('header-thumb-small', 120, 120, true);
-add_image_size('header-thumb-medium', 804, 275, true);
-add_image_size('header-thumb-large', 1170, 400, true);
-add_image_size('header-thumb', 2340, 800, true);
+add_image_size( 'custom-size', 364, 0, true );
