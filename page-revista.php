@@ -20,7 +20,7 @@ get_header();
           <a class="card-img-top text-center" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
           <div class="card-body">
             <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-            <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">Leia Mais »</a></p>
+            <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
           </div>
         </div>
       </div>

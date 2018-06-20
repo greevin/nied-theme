@@ -67,7 +67,7 @@
              <!-- Fim do Local -->
            </p>
       <?php endif; ?>
-       <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">Leia Mais »</a></p>
+       <p class="card-text"><a href="<?php the_permalink(); ?>" class="btn btn-link">Leia Mais »</a></p>
     </div>
   </div>
 </div>
