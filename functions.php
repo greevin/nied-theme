@@ -42,6 +42,9 @@ function wp_load_scripts()
 
     // 	Carregando Scripts header
     wp_enqueue_script('bootstrap-js', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'));
+    wp_enqueue_script('masonry-js', get_template_directory_uri().'/assets/js/masonry.pkgd.min.js', array('jquery'));
+    wp_enqueue_script('imagesloaded-js', get_template_directory_uri().'/assets/js/imagesloaded.pkgd.min.js', array('jquery'));
+    wp_enqueue_script('masonry-conf-js', get_template_directory_uri().'/assets/js/masonry-conf.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'wp_load_scripts');
 
