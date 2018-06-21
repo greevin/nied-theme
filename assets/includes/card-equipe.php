@@ -8,7 +8,9 @@
       <div class="circle-image fundo-azul">
         <a href="<?php the_permalink(); ?>">
           <?php if ($urlImg != false): ?>
-            <div class="circle-image" style="background-image: url(<?php echo $urlImg; ?>);"></div>
+            <div class="circle-image">
+              <?php the_post_thumbnail(); ?>
+            </div>
           <?php else: ?>
             <?php
             $title = get_the_title();

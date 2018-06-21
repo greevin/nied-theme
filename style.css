@@ -254,6 +254,13 @@ footer a, footer a:hover {
   box-shadow: 0px 0px 0px 3px rgba(200,207,213,0.9);
 }
 
+.equipe .card-image img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
 .equipe .card-cargo p.card-text {
   margin-bottom: 1px;
 }
