@@ -8,7 +8,7 @@
   					<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
             <div class="mb-3 post-meta"><small>Postado em: <?php the_date('d/m/Y', '<span>', '</span>'); ?> | <?php the_terms( $post->ID, 'category', '', ' | ' ); ?></small></div>
   					<?php if (has_post_thumbnail()): ?>
-  						<div class="pull-right"><?php the_post_thumbnail('thumbnail'); ?></div>
+  						<div class="pull-right"><?php the_post_thumbnail('medium'); ?></div>
   					<?php endif; ?>
   					<?php the_content(); ?>
             <table class="table">
