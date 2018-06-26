@@ -15,7 +15,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* jumobotron */
 
-.introducao .jumbotron, .pagina-interna .jumbotron {
+.introducao .jumbotron {
+  background-image: url("assets/images/montagem fotos azul.svg");
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding: 1rem;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+.pagina-interna .jumbotron {
   background-image: url("assets/images/fundo-jumbotron.png");
   background-attachment: fixed;
   background-position: center;
@@ -37,12 +50,14 @@ a, h2 {
 
 .card {
   transition: 0.3s all ease-in-out;
-  box-shadow: 0px 15px 45px -9px rgba(0,0,0,0.20);
+  /* box-shadow: 0px 15px 45px -9px rgba(0,0,0,0.20); */
+  box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.133);
 }
 
 .card:hover {
   transition: 0.3s all ease-in-out;
-  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.06);
+  box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 1px 1px 1px rgba(0,0,0,0.06); */
 }
 
 /* header */
