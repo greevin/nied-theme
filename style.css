@@ -20,10 +20,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto 100%;
   margin-top: 100px;
   margin-bottom: 0px;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
   text-shadow: 2px 2px #000;
 }
