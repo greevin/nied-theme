@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row grid-row">
       <?php
-         $args = array('post_type' => 'biblioteca', 'category_name' => 'revistas', 'post_status' => 'publish', 'posts_per_page' => -1);
+         $args = array('post_type' => 'biblioteca', 'category_name' => 'revista', 'post_status' => 'publish', 'posts_per_page' => -1);
          $posts = get_posts($args);
 
          if($posts) : foreach ($posts as $post) : setup_postdata($post);
