@@ -28,7 +28,7 @@
           <?php if ( get_field('link_edicao_atual') ) : ?>
             <a href="<?php the_field('link_edicao_atual'); ?>" class="btn btn-primary">Edição Atual</a>
           <?php endif; ?>
-          <a href="/revista" class="btn btn-secondary">Edições Anteriores</a>
+          <a href="/biblioteca/revistas" class="btn btn-secondary">Edições Anteriores</a>
         </div>
       </div>
     </div>
