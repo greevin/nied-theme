@@ -1,7 +1,7 @@
 <?php
 // Cards
 ?>
-<div class="custom-card">
+<div class="text-center custom-card">
   <div class="card mb-4 box-shadow">
     <!-- se o post tiver thumbnail -->
     <?php if( has_post_thumbnail() ): ?>
