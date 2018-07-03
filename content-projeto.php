@@ -6,6 +6,9 @@
     <div class="pull-right"><?php the_post_thumbnail('medium'); ?></div>
   <?php endif; ?>
   <?php the_content(); ?>
+  <?php if( get_field('galeria_de_fotos') ): ?>
+    <?php the_field('galeria_de_fotos'); ?>
+  <?php endif; ?>
   <div class="equipe-info" style="padding-top: 2rem;">
     <table class="table">
       <tbody>
