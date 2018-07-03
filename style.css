@@ -82,10 +82,14 @@ header .custom-logo {
 header .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   border-bottom: 1px solid rgba(0, 0, 0, .9);
   font-weight: bold;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
 
 header .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
   border-bottom: 1px solid rgba(0, 0, 0, .7);
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+  transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
 }
 
 header .nav-link {
