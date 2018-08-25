@@ -21,7 +21,9 @@
       <?php endif; ?>
       <div class="row">
         <div class="col-md-4 col-lg-4 mb-4 text-center">
-          <img alt="Imagem da Edição Atual" src="<?php the_field('imagem_da_edicao_atual'); ?>" style="border-width:0">
+          <a href="<?php the_field('link_edicao_atual'); ?>">
+            <img alt="Imagem da Edição Atual" src="<?php the_field('imagem_da_edicao_atual'); ?>" style="border-width:0">
+          <a/>
         </div>
         <div class="col-md-8 col-lg-8">
           <?php echo the_field('texto_apresentacao'); ?>
