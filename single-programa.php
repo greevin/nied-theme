@@ -21,7 +21,7 @@
                 </tr>
                 <tr>
                   <th scope="row">Download</th>
-                  <td><?php the_field('download_software'); ?> Download do software</td>
+                  <td><a href="<?php the_field('download_software'); ?>"> Download do arquivo</a></td>
                 </tr>
               </tbody>
             </table>
