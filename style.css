@@ -223,7 +223,13 @@ footer a, footer a:hover {
 }
 
 .custom-card img {
-  max-width: 100%;
+  max-width: 75%;
+  height: 50%;
+}
+
+.biblioteca img {
+  width: 50%;
+  height: 50%;
 }
 
 .parceiros {

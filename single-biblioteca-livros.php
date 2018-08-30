@@ -10,7 +10,7 @@
          $posts = get_posts($args);
 
          if($posts) : foreach ($posts as $post) : setup_postdata($post);
-         include(TEMPLATEPATH . '/assets/includes/card.php');
+         include(TEMPLATEPATH . '/assets/includes/card-biblioteca.php');
       ?>
       <?php
          endforeach;
