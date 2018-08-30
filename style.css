@@ -232,6 +232,11 @@ footer a, footer a:hover {
   height: 50%;
 }
 
+.card-category a {
+  pointer-events: none;
+  cursor: default;
+}
+
 .parceiros {
     display: flex;
     justify-content: center;
