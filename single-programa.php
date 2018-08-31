@@ -20,8 +20,10 @@
                   <?php endif; ?>
                 </tr>
                 <tr>
-                  <th scope="row">Download</th>
-                  <td><a href="<?php the_field('download_software'); ?>"> Download do arquivo</a></td>
+                  <?php if( get_field('download_software') ): ?>
+                    <th scope="row">Download</th>
+                    <td><a href="<?php the_field('download_software'); ?>"> Download do arquivo</a></td>
+                  <?php endif; ?>
                 </tr>
               </tbody>
             </table>

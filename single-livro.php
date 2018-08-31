@@ -26,8 +26,10 @@
                   <?php endif; ?>
                 </tr>
                 <tr>
-                  <th scope="row">Download</th>
-                  <td><?php the_field('download_livro'); ?> Download do livro</td>
+                  <?php if( get_field('download_livro') ): ?>
+                    <th scope="row">Download</th>
+                    <td><?php the_field('download_livro'); ?> Download do livro</td>
+                  <?php endif; ?>
                 </tr>
               </tbody>
             </table>
