@@ -227,7 +227,7 @@ footer a, footer a:hover {
   height: 100%;
 }
 
-.biblioteca img {
+.biblioteca .card-image-size img {
   width: 50%;
   height: 100%;
 }
