@@ -97,11 +97,18 @@
             </td>
           <?php endif; ?>
         </tr>
-        <!-- Mais Informações -->
+        <!-- URL do Projeto -->
         <tr>
           <?php if( get_field('url_projeto') ): ?>
-            <th scope="row">Mais Informações</th>
+            <th scope="row">URL do Projeto</th>
             <td><a href="<?php the_field('url_projeto'); ?>"><?php the_field('url_projeto'); ?></a></td>
+          <?php endif; ?>
+        </tr>
+        <!-- Mais Informações -->
+        <tr>
+          <?php if( get_field('mais_informações') ): ?>
+            <th scope="row">Mais Informações</th>
+            <td><a href="<?php the_field('mais_informações'); ?>"><?php the_field('mais_informações'); ?></a></td>
           <?php endif; ?>
         </tr>
       </tbody>
