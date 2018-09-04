@@ -20,7 +20,7 @@
     <?php endif; ?>
     <div class="card-body bg-light">
       <div class="card-category">
-        <?php the_terms( $post->ID, 'category', '', ' | ' ); ?>
+        <a style="color: #007bff;">Projeto</a>
       </div>
       <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       <p class="card-text"><?php echo wp_trim_words(get_the_content(), 25, '...' ); ?></p>
