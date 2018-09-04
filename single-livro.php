@@ -28,7 +28,7 @@
                 <tr>
                   <?php if( get_field('download_livro') ): ?>
                     <th scope="row">Download</th>
-                    <td><?php the_field('download_livro'); ?> Download do livro</td>
+                    <td><a href="<?php the_field('download_livro'); ?>"> Download do livro</a></td>
                   <?php endif; ?>
                 </tr>
               </tbody>
